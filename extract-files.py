@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+import subprocess
+
 from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
@@ -21,10 +23,11 @@ namespace_imports = [
     'device/xiaomi/miuicamera-marble',
 ]
 
-
 def lib_fixup_system_suffix(lib: str, partition: str, *args, **kwargs):
     return f'{lib}_{partition}' if partition == 'system' else None
 
+def split_apk(ctx, file, file_path, *args, **kwargs):
+    subprocess.run(['split', '--bytes=20M', '-d', file_path, f'{file_path}.part'], check=True)
 
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
@@ -40,7 +43,8 @@ blob_fixups: blob_fixups_user_type = {
     'system/lib64/libmicampostproc_client.so': blob_fixup()
         .remove_needed('libhidltransport.so'),
     'system/priv-app/MiuiCamera/MiuiCamera.apk': blob_fixup()
-        .apktool_patch('patches'),
+        .apktool_patch('patches')
+        .call(split_apk),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
