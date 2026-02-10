@@ -1,7 +1,7 @@
 From b61b98d104284dc14141e9ee463af6b8bf57b35d Mon Sep 17 00:00:00 2001
 From: pabloescobar-reborn <yogivangala07@gmail.com>
 Date: Mon, 9 Feb 2026 09:21:14 +0000
-Subject: [PATCH] Replace icon and add monochrome icon support
+Subject: [PATCH 3/7] Replace icon and add monochrome icon support
 
 ---
  res/drawable/ic_launcher_monochrome.xml       |  22 ++++++++++++++++++
@@ -8309,5 +8309,4 @@ literal 0
 HcmV?d00001
 
 -- 
-2.43.0
-
+2.47.3
