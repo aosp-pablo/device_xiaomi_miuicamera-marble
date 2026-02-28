@@ -7,6 +7,12 @@
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/miuicamera-marble/miuicamera-marble-vendor.mk)
 
+# MiuiPrebuilts
+ifneq ($(filter true,$(WITH_GAPPS) $(WITH_GMS)),)
+PRODUCT_PACKAGES += \
+    MiuiCalculator
+endif
+
 # Public libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries-xiaomi.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-xiaomi.txt
