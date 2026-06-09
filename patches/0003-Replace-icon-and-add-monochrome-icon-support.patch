@@ -1,4 +1,4 @@
-From b61b98d104284dc14141e9ee463af6b8bf57b35d Mon Sep 17 00:00:00 2001
+From d1a5d255d08e32340307f3e8ce1c8a6513130dab Mon Sep 17 00:00:00 2001
 From: pabloescobar-reborn <yogivangala07@gmail.com>
 Date: Mon, 9 Feb 2026 09:21:14 +0000
 Subject: [PATCH 3/7] Replace icon and add monochrome icon support
@@ -54,7 +54,7 @@ index 00000000..c6171e99
 +</vector>
 diff --git a/res/mipmap-anydpi-v26/ic_launcher_camera_cv.xml b/res/mipmap-anydpi-v26/ic_launcher_camera_cv.xml
 new file mode 100644
-index 00000000..0fe0c2a7
+index 00000000..49ba78d8
 --- /dev/null
 +++ b/res/mipmap-anydpi-v26/ic_launcher_camera_cv.xml
 @@ -0,0 +1,10 @@
@@ -70,7 +70,7 @@ index 00000000..0fe0c2a7
 +</adaptive-icon>
 diff --git a/res/mipmap-anydpi/ic_launcher_camera_cv.xml b/res/mipmap-anydpi/ic_launcher_camera_cv.xml
 new file mode 100644
-index 00000000..0fe0c2a7
+index 00000000..49ba78d8
 --- /dev/null
 +++ b/res/mipmap-anydpi/ic_launcher_camera_cv.xml
 @@ -0,0 +1,10 @@
@@ -8309,4 +8309,5 @@ literal 0
 HcmV?d00001
 
 -- 
-2.47.3
+2.43.0
+

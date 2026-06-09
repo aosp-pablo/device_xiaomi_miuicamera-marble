@@ -1,4 +1,4 @@
-From 1b556b4d5ccbd6d57c3c26d166f1e184078262fb Mon Sep 17 00:00:00 2001
+From 363d4b4ff330d2464f8ad707758971e6914e782d Mon Sep 17 00:00:00 2001
 From: Arian <arian.kulmer@web.de>
 Date: Thu, 9 Jan 2025 23:47:48 +0100
 Subject: [PATCH 4/7] Redo shortcut icon drawables
@@ -366,7 +366,7 @@ zyKM$s$N#%U-=JuK#q#KX<5Um7gu&Lk4E(882Tj=O`S=xtOcjLCIMv8~5CE1_VTNxj
 si*x$|pAe`{zv7br{`7<Y-g$rjyt(UOO5Vvyh=U1Ks7%U$>;M1&0Bt)bKmY&$
 
 diff --git a/res/drawable/shortcat_cosmetic_mirror.xml b/res/drawable/shortcat_cosmetic_mirror.xml
-index 8113a1b75..6d999f043 100644
+index af90307a..6d999f04 100644
 --- a/res/drawable/shortcat_cosmetic_mirror.xml
 +++ b/res/drawable/shortcat_cosmetic_mirror.xml
 @@ -1,6 +1,17 @@
@@ -394,7 +394,7 @@ index 8113a1b75..6d999f043 100644
 +    </foreground>
 +</adaptive-icon>
 diff --git a/res/drawable/shortcut_capture_mode.xml b/res/drawable/shortcut_capture_mode.xml
-index ae0d77ecb..de2383911 100644
+index eccd7def..de238391 100644
 --- a/res/drawable/shortcut_capture_mode.xml
 +++ b/res/drawable/shortcut_capture_mode.xml
 @@ -1,6 +1,17 @@
@@ -422,7 +422,7 @@ index ae0d77ecb..de2383911 100644
 +    </foreground>
 +</adaptive-icon>
 diff --git a/res/drawable/shortcut_document_mode.xml b/res/drawable/shortcut_document_mode.xml
-index 92a302c12..cf5f89578 100644
+index 040e92cb..cf5f8957 100644
 --- a/res/drawable/shortcut_document_mode.xml
 +++ b/res/drawable/shortcut_document_mode.xml
 @@ -1,6 +1,17 @@
@@ -450,7 +450,7 @@ index 92a302c12..cf5f89578 100644
 +    </foreground>
 +</adaptive-icon>
 diff --git a/res/drawable/shortcut_professional_mode.xml b/res/drawable/shortcut_professional_mode.xml
-index 16da060f0..afe3ffa78 100644
+index e65157e6..afe3ffa7 100644
 --- a/res/drawable/shortcut_professional_mode.xml
 +++ b/res/drawable/shortcut_professional_mode.xml
 @@ -1,6 +1,17 @@
@@ -478,7 +478,7 @@ index 16da060f0..afe3ffa78 100644
 +    </foreground>
 +</adaptive-icon>
 diff --git a/res/drawable/shortcut_video_mode.xml b/res/drawable/shortcut_video_mode.xml
-index 906dcc064..c0b9cd5f3 100644
+index a2e67750..c0b9cd5f 100644
 --- a/res/drawable/shortcut_video_mode.xml
 +++ b/res/drawable/shortcut_video_mode.xml
 @@ -1,6 +1,17 @@
@@ -506,5 +506,5 @@ index 906dcc064..c0b9cd5f3 100644
 +    </foreground>
 +</adaptive-icon>
 -- 
-2.47.3
+2.43.0
 

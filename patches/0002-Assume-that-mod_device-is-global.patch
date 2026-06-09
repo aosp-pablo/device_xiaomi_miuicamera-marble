@@ -1,4 +1,4 @@
-From 6d124e8a4676252bafd924ca07f3be2d12f898de Mon Sep 17 00:00:00 2001
+From aafbc410156aad711a99c534045ce29f96d5897c Mon Sep 17 00:00:00 2001
 From: danielml <daniel@danielml.dev>
 Date: Fri, 19 Apr 2024 17:32:08 +0200
 Subject: [PATCH 2/7] Assume that mod_device is global
@@ -13,7 +13,7 @@ Signed-off-by: danielml <daniel@danielml.dev>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/smali_classes3/mb/c.smali b/smali_classes3/mb/c.smali
-index 010a2c018..eb4b2b087 100644
+index 010a2c01..eb4b2b08 100644
 --- a/smali_classes3/mb/c.smali
 +++ b/smali_classes3/mb/c.smali
 @@ -566,7 +566,7 @@
@@ -26,5 +26,5 @@ index 010a2c018..eb4b2b087 100644
      sput-boolean v0, Lmb/c;->E:Z
  
 -- 
-2.47.3
+2.43.0
 
