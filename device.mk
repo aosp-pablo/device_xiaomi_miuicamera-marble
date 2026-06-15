@@ -13,6 +13,12 @@ PRODUCT_PACKAGES += \
     MiuiCalculator
 endif
 
+ifeq ($(WITH_MIUI),true)
+PRODUCT_PACKAGES += \
+    MiuiGallery \
+    MiuiGalleryEditor
+endif
+
 # Public libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries-xiaomi.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-xiaomi.txt
